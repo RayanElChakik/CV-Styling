@@ -222,29 +222,4 @@ section h3{
     right: 20%;
     width: 100px;
   }
-  /* Media Content */
-#competencies, #experiences, #education, #hobbies {
-  display: block;
-  padding-bottom: 30px;
-}
-section h3{
-  border-bottom: 1px solid black;
-  width: 30%;
-}
-.experience, .skills, #hobbies ul{
-  border-left: none;
-}
-#about p{
-  max-width: max-content;
-}
-  /* Media Contact */
-.contacts{
-  width: 120%;
-  flex-wrap: wrap;
-  margin: 0;
-  justify-content: left;
-}
-.skills-primary, .experience, .education, .hobbies{
-  padding-top: 30px;
-}
 }
