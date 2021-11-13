@@ -1,0 +1,166 @@
+body{
+    font-family: 'Times New Roman', Times, serif, sans-serif;
+    background-color: #CFCDCD;
+}
+
+/* Header Styling */
+header{
+    background-color: #9ab2cf;
+    width: 100%;
+}
+header div{
+    margin-left: 10%;
+    display: flex;
+    align-items: center;
+}
+hgroup{
+    color: #2C4D76;
+    font-weight: bold;
+}
+
+ /* Contact Header Styling */ 
+
+#contact{
+    position: absolute;
+    top: 2%;
+    right: 0;
+}
+#contact h3{
+    display: none;
+}
+.contact {
+    display: flex;
+    margin: 0;
+    width: min-content;
+}
+.contact-type{
+    width: 110px;
+    background-color: #2C4D76;
+    color: #CFCDCD;
+    padding-bottom: 5px;
+    padding-left: 10px;
+}
+.contact-value{
+    width: 580px;
+    margin-left: 0;
+    padding-left: 10px;
+}
+dd, dd a{
+    background-color: #CFCDCD;
+    color: #2C4D76;
+    text-decoration: none;
+}
+
+/* Content Main Page Styling */
+
+.content{
+    display: flex;
+    flex-wrap: wrap;
+    padding: 5% 10% 5% 10%;
+}
+h3{
+    font-size: 15pt;
+    font-weight: bold;
+    border-bottom: 1px solid black;
+    padding-bottom: 10px;
+}
+h3::before{
+    content: '';
+    width: 15px;
+    height: 15px;
+    background-color: #2C4D76;
+    display: inline-block;
+    border-radius: 50%;
+    margin-right: 10px;
+}
+section{
+    width: 50%;
+}
+section p{
+    padding-right: 20px;
+}
+
+/* Competencies Skills Styling*/
+
+.skill{
+    width: 100%;
+    background-color: #9ab2cf;
+    margin: 5px 5px 5px 0;
+    padding: 5px;
+}
+/* Adding the word main before the skill grading */ 
+.skills-primary::before{
+    content: 'Main';
+}
+/*Adding the word other before the skill grading */ 
+.skills-secondary::before{
+    content: 'Other';
+}
+.skills-secondary div{
+    opacity: 0.8;
+}
+.skill span {
+    display: inherit;
+    background-color: #2C4D76;
+    color: #CFCDCD;
+    font-weight: bold;
+    padding: 3px;
+}
+.skill[data-skill='1'] span {
+    width: 7%
+}
+
+.skill[data-skill='2'] span {
+    width: 20%;
+}
+
+.skill[data-skill='3'] span {
+    width: 30%;
+}
+
+.skill[data-skill='4'] span {
+    width: 40% ;
+}
+
+.skill[data-skill='5'] span {
+    width: 50%;
+}
+
+.skill[data-skill='6'] span {
+    width: 60% ;
+}
+
+.skill[data-skill='7'] span {
+    width: 70% ;
+}
+
+.skill[data-skill='8'] span {
+    width: 80%;
+}
+
+.skill[data-skill='9'] span {
+    width: 90% ;
+}
+
+.skill[data-skill='10'] span {
+    width: 100%;
+}
+
+/* Experience missing content and styling */
+.experience-institution::before{
+    content: "@ ";
+}
+.experience-details::before{
+    content: "In ";
+}
+.experience-date-separator{
+    color: #2C4D76;
+    font-weight: bold;
+}
+.experience-details{
+    padding-left: 10px;
+    color: rgb(126, 117, 117);
+}
+.experience h4{
+    margin-bottom: 0;
+}
