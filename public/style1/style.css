@@ -9,7 +9,7 @@ header {
   width: 100%;
 }
 header div {
-  margin-left: 10%;
+  margin-left: 5%;
   display: flex;
   align-items: center;
 }
@@ -148,6 +148,10 @@ section p {
 }
 
 /* Experience missing content and styling */
+.experience{
+  padding-right: 25px;
+  padding-left: 20px;
+}
 .experience-institution::before {
   content: "@ ";
 }

@@ -52,6 +52,7 @@ section h3{
   display: flex;
   grid-column: 2 ;
   border-left: 1px solid black;
+  margin-left: 50px;
 }
 .skill {
   color: #fff;
@@ -113,7 +114,9 @@ section h3{
   display: grid;
   grid-template-columns: 1fr 1fr;
   border-left: 1px solid black;
-  padding: 10px;
+  padding-right: 25px;
+  padding-left: 20px;
+  margin-left: 50px;
 }
 .experience h4{
   margin-top: 0;
@@ -133,6 +136,7 @@ section h3{
 }
 #hobbies ul{
   border-left: 1px solid black;
+  margin-left: 50px;
 }
 .experience-description {
   grid-column: 1/3;
@@ -178,7 +182,7 @@ section h3{
 @media (max-width: 480px) {
   /* Media Header */
   body{
-    margin: 20px;
+    margin: 0;
   }
   figure img {
     display: none;
@@ -187,16 +191,20 @@ section h3{
 #competencies, #experiences, #education, #hobbies {
   display: block;
   padding-bottom: 30px;
+  margin: 0;
 }
 section h3{
   border-bottom: 1px solid black;
   width: 30%;
+  margin: 0;
 }
 .experience, .skills, #hobbies ul{
   border-left: none;
+  margin: 0;
 }
 #about p{
   max-width: max-content;
+  margin: 0;
 }
   /* Media Contact */
 .contacts{
@@ -204,9 +212,11 @@ section h3{
   flex-wrap: wrap;
   margin: 0;
   justify-content: left;
+  margin: 0;
 }
 .skills-primary, .experience, .education, .hobbies{
   padding-top: 30px;
+  margin: 0;
 }
 }
 
