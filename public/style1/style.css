@@ -17,7 +17,11 @@ hgroup {
   color: #2c4d76;
   font-weight: bold;
 }
-
+header img{
+  border: 2px double black;
+  box-shadow: 8px 8px 5px #2c4d76;
+  margin-right: 20px;
+}
 /* Contact Header Styling */
 
 #contact {
@@ -32,6 +36,7 @@ hgroup {
   display: flex;
   margin: 0;
   width: min-content;
+  
 }
 .contact-type {
   width: 110px;
@@ -39,11 +44,15 @@ hgroup {
   color: #cfcdcd;
   padding-bottom: 5px;
   padding-left: 10px;
+  padding-right: 5px;
+  border-left: 3px solid black;
 }
+
 .contact-value {
-  width: 580px;
+  width: 500px;
   margin-left: 0;
   padding-left: 10px;
+  border-right: 3px solid black;
 }
 dd,
 dd a {
@@ -86,6 +95,7 @@ section p {
 .skill {
   width: 100%;
   background-color: #9ab2cf;
+  border: 2px dotted #2c4d76;
   margin: 5px 5px 5px 0;
   padding: 5px;
 }
@@ -107,44 +117,44 @@ section p {
   font-weight: bold;
   padding: 3px;
 }
-.skill[data-skill="1"] span {
-  width: 7%;
+.skill[data-skill='1'] span {
+  width: calc(10% - 2%);
 }
 
-.skill[data-skill="2"] span {
-  width: 20%;
+.skill[data-skill='2'] span {
+  width: calc(20% - 2%);
 }
 
-.skill[data-skill="3"] span {
-  width: 30%;
+.skill[data-skill='3'] span {
+  width: calc(30% - 2%);
 }
 
-.skill[data-skill="4"] span {
-  width: 40%;
+.skill[data-skill='4'] span {
+  width: calc(40% - 2%);
 }
 
-.skill[data-skill="5"] span {
-  width: 50%;
+.skill[data-skill='5'] span {
+  width: calc(50% - 2%);
 }
 
-.skill[data-skill="6"] span {
-  width: 60%;
+.skill[data-skill='6'] span {
+  width: calc(60% - 2%);
 }
 
-.skill[data-skill="7"] span {
-  width: 70%;
+.skill[data-skill='7'] span {
+  width: calc(70% - 2%);
 }
 
-.skill[data-skill="8"] span {
-  width: 80%;
+.skill[data-skill='8'] span {
+  width: calc(80% - 2%);
 }
 
-.skill[data-skill="9"] span {
-  width: 90%;
+.skill[data-skill='9'] span {
+  width: calc(90% - 2%);
 }
 
-.skill[data-skill="10"] span {
-  width: 100%;
+.skill[data-skill='10'] span {
+  width: calc(100% - 2%);
 }
 
 /* Experience missing content and styling */
@@ -157,6 +167,9 @@ section p {
 }
 .experience-details::before {
   content: "In ";
+}
+.experience-date::before{
+  content: "on";
 }
 .experience-date-separator {
   color: #2c4d76;
@@ -191,6 +204,11 @@ section p {
   #contact h3 {
     display: inherit;
   }
+  .contact-value {
+    width: 200px;
+    margin-left: 0;
+    padding-left: 10px;
+  }
 }
 
 /* Responsive Media Querying for Tablets & Large Screens*/
@@ -213,3 +231,5 @@ section p {
     display: inherit;
   }
 }
+
+
