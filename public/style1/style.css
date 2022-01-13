@@ -1,235 +1,236 @@
 body {
-  font-family: "Times New Roman", Times, serif, sans-serif;
-  background-color: #cfcdcd;
-}
-
-/* Header Styling */
-header {
-  background-color: #9ab2cf;
-  width: 100%;
-}
-header div {
-  margin-left: 5%;
-  display: flex;
-  align-items: center;
-}
-hgroup {
-  color: #2c4d76;
-  font-weight: bold;
-}
-header img{
-  border: 2px double black;
-  box-shadow: 8px 8px 5px #2c4d76;
-  margin-right: 20px;
-}
-/* Contact Header Styling */
-
-#contact {
-  position: absolute;
-  top: 2%;
-  right: 0;
-}
-#contact h3 {
-  display: none;
-}
-.contact {
-  display: flex;
-  margin: 0;
-  width: min-content;
-  
-}
-.contact-type {
-  width: 110px;
-  background-color: #2c4d76;
-  color: #cfcdcd;
-  padding-bottom: 5px;
-  padding-left: 10px;
-  padding-right: 5px;
-  border-left: 3px solid black;
-}
-
-.contact-value {
-  width: 500px;
-  margin-left: 0;
-  padding-left: 10px;
-  border-right: 3px solid black;
-}
-dd,
-dd a {
-  background-color: #cfcdcd;
-  color: #2c4d76;
-  text-decoration: none;
-}
-
-/* Content Main Page Styling */
-
-.content {
-  display: flex;
-  flex-wrap: wrap;
-  padding: 5% 10% 5% 10%;
-}
-h3 {
-  font-size: 15pt;
-  font-weight: bold;
-  border-bottom: 1px solid black;
-  padding-bottom: 10px;
-}
-h3::before {
-  content: "";
-  width: 15px;
-  height: 15px;
-  background-color: #2c4d76;
-  display: inline-block;
-  border-radius: 50%;
-  margin-right: 10px;
-}
-section {
-  width: 50%;
-}
-section p {
-  padding-right: 20px;
-}
-
-/* Competencies Skills Styling*/
-
-.skill {
-  width: 100%;
-  background-color: #9ab2cf;
-  border: 2px dotted #2c4d76;
-  margin: 5px 5px 5px 0;
-  padding: 5px;
-}
-/* Adding the word main before the skill grading */
-.skills-primary::before {
-  content: "Main";
-}
-/*Adding the word other before the skill grading */
-.skills-secondary::before {
-  content: "Other";
-}
-.skills-secondary div {
-  opacity: 0.8;
-}
-.skill span {
-  display: inherit;
-  background-color: #2c4d76;
-  color: #cfcdcd;
-  font-weight: bold;
-  padding: 3px;
-}
-.skill[data-skill='1'] span {
-  width: calc(10% - 2%);
-}
-
-.skill[data-skill='2'] span {
-  width: calc(20% - 2%);
-}
-
-.skill[data-skill='3'] span {
-  width: calc(30% - 2%);
-}
-
-.skill[data-skill='4'] span {
-  width: calc(40% - 2%);
-}
-
-.skill[data-skill='5'] span {
-  width: calc(50% - 2%);
-}
-
-.skill[data-skill='6'] span {
-  width: calc(60% - 2%);
-}
-
-.skill[data-skill='7'] span {
-  width: calc(70% - 2%);
-}
-
-.skill[data-skill='8'] span {
-  width: calc(80% - 2%);
-}
-
-.skill[data-skill='9'] span {
-  width: calc(90% - 2%);
-}
-
-.skill[data-skill='10'] span {
-  width: calc(100% - 2%);
-}
-
-/* Experience missing content and styling */
-.experience{
-  padding-right: 25px;
-  padding-left: 20px;
-}
-.experience-institution::before {
-  content: "@ ";
-}
-.experience-details::before {
-  content: "In ";
-}
-.experience-date::before{
-  content: "on";
-}
-.experience-date-separator {
-  color: #2c4d76;
-  font-weight: bold;
-}
-.experience-details {
-  padding-left: 10px;
-  color: rgb(126, 117, 117);
-}
-.experience h4 {
-  margin-bottom: 0;
-}
-
-/* Responsive Media Querying for Mobile Phones */
-@media (max-width: 480px) {
-  /* Media Header */
-  header div {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    justify-content: space-around;
-    font-size: 10pt;
+    font-family: 'Roboto', sans-serif;
+    background-color: #cfcdcd;
+    line-height: 1.8;
+    word-spacing: 1px;
   }
-  /* Media Content */
-  section {
+  
+  /* Header Styling */
+  header {
+    background-color: #9ab2cf;
     width: 100%;
   }
-  /* Media Contact */
-  #contact {
-    position: static;
-  }
-  #contact h3 {
-    display: inherit;
-  }
-  .contact-value {
-    width: 200px;
-    margin-left: 0;
-    padding-left: 10px;
-  }
-}
-
-/* Responsive Media Querying for Tablets & Large Screens*/
-@media (max-width: 992px) {
-  /* Media Header */
   header div {
+    margin-left: 5%;
     display: flex;
     align-items: center;
-    justify-content: space-around;
   }
-  /* Media Content */
-  #hobbies {
-    width: 100%;
+  hgroup {
+    color: #2c4d76;
+    font-weight: bold;
   }
-  /* Media Contact */
+  header img{
+    border: 2px double black;
+    box-shadow: 8px 8px 5px #2c4d76;
+    margin-right: 20px;
+  }
+  /* Contact Header Styling */
+  
   #contact {
-    position: static;
+    position: absolute;
+    top: 2%;
+    right: 0;
   }
   #contact h3 {
-    display: inherit;
+    display: none;
   }
-}
-
-
+  .contact {
+    display: flex;
+    margin: 0;
+    width: min-content;
+    
+  }
+  .contact-type {
+    width: 110px;
+    background-color: #2c4d76;
+    color: #cfcdcd;
+    padding-bottom: 5px;
+    padding-left: 10px;
+    padding-right: 5px;
+    border-left: 3px solid black;
+  }
+  
+  .contact-value {
+    width: 500px;
+    margin-left: 0;
+    padding-left: 10px;
+    border-right: 3px solid black;
+  }
+  dd,
+  dd a {
+    background-color: #cfcdcd;
+    color: #2c4d76;
+    text-decoration: none;
+  }
+  
+  /* Content Main Page Styling */
+  
+  .content {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 5% 10% 5% 10%;
+  }
+  h3 {
+    font-size: 15pt;
+    font-weight: bold;
+    border-bottom: 1px solid black;
+    padding-bottom: 10px;
+  }
+  h3::before {
+    content: "";
+    width: 15px;
+    height: 15px;
+    background-color: #2c4d76;
+    display: inline-block;
+    border-radius: 50%;
+    margin-right: 10px;
+  }
+  section {
+    width: 50%;
+  }
+  section p {
+    padding-right: 20px;
+  }
+  
+  /* Competencies Skills Styling*/
+  
+  .skill {
+    width: 100%;
+    background-color: #9ab2cf;
+    border: 2px dotted #2c4d76;
+    margin: 5px 5px 5px 0;
+    padding: 5px;
+  }
+  /* Adding the word main before the skill grading */
+  .skills-primary::before {
+    content: "Main";
+  }
+  /*Adding the word other before the skill grading */
+  .skills-secondary::before {
+    content: "Other";
+  }
+  .skills-secondary div {
+    opacity: 0.8;
+  }
+  .skill span {
+    display: inherit;
+    background-color: #2c4d76;
+    color: #cfcdcd;
+    font-weight: bold;
+    padding: 3px;
+  }
+  .skill[data-skill='1'] span {
+    width: calc(10% - 2%);
+  }
+  
+  .skill[data-skill='2'] span {
+    width: calc(20% - 2%);
+  }
+  
+  .skill[data-skill='3'] span {
+    width: calc(30% - 2%);
+  }
+  
+  .skill[data-skill='4'] span {
+    width: calc(40% - 2%);
+  }
+  
+  .skill[data-skill='5'] span {
+    width: calc(50% - 2%);
+  }
+  
+  .skill[data-skill='6'] span {
+    width: calc(60% - 2%);
+  }
+  
+  .skill[data-skill='7'] span {
+    width: calc(70% - 2%);
+  }
+  
+  .skill[data-skill='8'] span {
+    width: calc(80% - 2%);
+  }
+  
+  .skill[data-skill='9'] span {
+    width: calc(90% - 2%);
+  }
+  
+  .skill[data-skill='10'] span {
+    width: calc(100% - 2%);
+  }
+  
+  /* Experience missing content and styling */
+  .experience{
+    padding-right: 25px;
+    padding-left: 20px;
+  }
+  .experience-institution::before {
+    content: "@ ";
+  }
+  .experience-details::before {
+    content: "In ";
+  }
+  .experience-date::before{
+    content: "on";
+  }
+  .experience-date-separator {
+    color: #2c4d76;
+    font-weight: bold;
+  }
+  .experience-details {
+    padding-left: 10px;
+    color: rgb(126, 117, 117);
+  }
+  .experience h4 {
+    margin-bottom: 0;
+  }
+  
+  /* Responsive Media Querying for Mobile Phones */
+  @media (max-width: 480px) {
+    /* Media Header */
+    header div {
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      justify-content: space-around;
+      font-size: 10pt;
+    }
+    /* Media Content */
+    section {
+      width: 100%;
+    }
+    /* Media Contact */
+    #contact {
+      position: static;
+    }
+    #contact h3 {
+      display: inherit;
+    }
+    .contact-value {
+      width: 200px;
+      margin-left: 0;
+      padding-left: 10px;
+    }
+  }
+  
+  /* Responsive Media Querying for Tablets & Large Screens*/
+  @media (max-width: 992px) {
+    /* Media Header */
+    header div {
+      display: flex;
+      align-items: center;
+      justify-content: space-around;
+    }
+    /* Media Content */
+    #hobbies {
+      width: 100%;
+    }
+    /* Media Contact */
+    #contact {
+      position: static;
+    }
+    #contact h3 {
+      display: inherit;
+    }
+  }
+  
